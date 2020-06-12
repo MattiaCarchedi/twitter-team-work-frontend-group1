@@ -62,7 +62,7 @@ export default class SingleMessageFetcher extends React.Component {
                 })
                 .then(messageItem => {
                     this.setState({
-                        message: messageItem,
+                        message: messageItem[0],
                         status: 'SUCCEED'
                     });
                 })
