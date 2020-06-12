@@ -1,11 +1,13 @@
 .nav {
+	
+	width: 100%;
 	padding: 20px;
 	max-height: 15vh;
-	margin: 0;
+	/* margin: 0; */
 	display: flex;
 	justify-content: space-evenly;
 	align-items: baseline;
-	margin-bottom: 100px;
+	margin-bottom: 200px;
 }
 .nav-logo {
 	width: 6em;
