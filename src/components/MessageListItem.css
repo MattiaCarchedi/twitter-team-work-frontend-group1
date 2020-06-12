@@ -13,12 +13,28 @@
     margin-bottom: 15px;
 }
 
-.message-list-item__user-name {
+
+.message-list-item__user-name a:active,
+,
+.message-list-item__user-name a:hover {
     font-family: "Arial", sans-serif;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
+    color: rgb(131, 131, 131)
+}
+
+.message-list-item__user-name a:link,
+.message-list-item__user-name a:visited {
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: black
 }
 
 .message-list-item__date {
