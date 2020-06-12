@@ -4,6 +4,7 @@ import './MessageListItem.css';
 export default function MessageListItem(props) {
     const { text, date, id_user, name_user, onNameClickHandler } = props;
     const actDate = new Date(date);
+    console.log(date)
     return (
 
         <div className="message-list-item">
