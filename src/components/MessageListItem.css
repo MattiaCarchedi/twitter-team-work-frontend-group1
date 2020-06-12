@@ -1,0 +1,31 @@
+.message-list-item__container {
+    background-color: rgb(223, 223, 223);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.message-list-item__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.message-list-item__user-name {
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.message-list-item__date {
+    opacity: 0.5;
+}
+
+.message-list-item__text {
+    letter-spacing: 1px;
+    text-align: justify;
+}
