@@ -62,7 +62,7 @@ class MessageList extends React.Component {
             status: 'STARTED',
             errorMessage: null
         }, () => {
-            fetch('#')
+            fetch('https://shitter-twit.herokuapp.com/')
                 .then(response => {
                     return response.json();
                 })
