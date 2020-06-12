@@ -4,10 +4,10 @@ import { useParams } from 'react-router-dom';
 
 import SingleMessageFetcher from './SingleMessageFetcher';
 
-const SingleCatFact = () => {
-    let { messageItemId } = useParams();
+const SingleMessageItem = () => {
+    let { itemId } = useParams();
 
-    return <SingleMessageFetcher factId={messageItemId} />
+    return <SingleMessageFetcher itemId={itemId} />
 };
 
-export default SingleCatFact;
+export default SingleMessageItem;
