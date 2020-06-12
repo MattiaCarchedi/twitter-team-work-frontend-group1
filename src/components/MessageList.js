@@ -32,7 +32,7 @@ class MessageList extends React.Component {
                 )}
 
                 {status === 'SUCCEED' && (
-                    <div>
+                    <div className="message-list-item">
                         { ListofMessages.map((message) => {
                             return (
                                 <MessageListItem
@@ -41,7 +41,8 @@ class MessageList extends React.Component {
                                     text={message.text}
                                     id_user={message.id_user}
                                     name_user={message.name_user}
-                                    onNameClickHandler={message.onNameClickHandler}
+                                    onNameClickHandler={(user_id) => {console.log(user_id)}}
+                                    date={message.date}
                                 />
                             )
                         }) }
@@ -62,17 +63,24 @@ class MessageList extends React.Component {
             status: 'STARTED',
             errorMessage: null
         }, () => {
-            fetch('https://shitter-twit.herokuapp.com/')
+
+            var requestOptions = {
+                method: 'GET',
+                redirect: 'follow'
+              };
+              
+            fetch('https://shitter-twit.herokuapp.com/message')
                 .then(response => {
                     return response.json();
                 })
                 .then(ListofMessages => {
                     this.setState({
-                        ListofMessages: ListofMessages.all,
+                        ListofMessages: ListofMessages,
                         status: 'SUCCEED'
                     });
                 })
                 .catch((error) => {
+                    console.log(error)
                     this.setState({
                         status: 'FAILED',
                         errorMessage: error.message,
