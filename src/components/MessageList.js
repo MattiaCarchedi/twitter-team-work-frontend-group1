@@ -41,6 +41,7 @@ class MessageList extends React.Component {
                                     text={message.text}
                                     id_user={message.id_user}
                                     name_user={message.name_user}
+                                    onNameClickHandler={message.onNameClickHandler}
                                 />
                             )
                         }) }
