@@ -3,8 +3,9 @@
 	max-height: 15vh;
 	margin: 0;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: baseline;
+	margin-bottom: 100px;
 }
 .nav-logo {
 	width: 6em;
@@ -25,7 +26,9 @@
 	color: #353434;
 	font-size: 1.5em;
 }
-
+.search-icon {
+	width: 45px;
+}
 .nav_list {
 	display: flex;
 	list-style: none;
