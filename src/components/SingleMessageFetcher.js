@@ -56,7 +56,7 @@ export default class SingleMessageFetcher extends React.Component {
             status: 'STARTED',
             errorMessage: null
         }, () => {
-            fetch(`https://cat-fact.herokuapp.com/facts/${this.props.messageId}`)
+            fetch(`https://shitter-twit.herokuapp.com/message/${this.props.itemId}`)
                 .then(response => {
                     return response.json();
                 })
